@@ -1,6 +1,6 @@
 var firstMoudle = require('./firstmoduel.js');
 
-firstMoudle.getFilesWithExtenstion(process.argv[2], process.argv[3], printFileNames);
+firstMoudle(process.argv[2], process.argv[3], printFileNames);
 
 function printFileNames(err, fileNames)
 {
