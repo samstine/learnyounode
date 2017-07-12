@@ -1,7 +1,7 @@
 var fs = require("fs");
 var path = require("path");
 
-function getFilesWithExtenstion(directoryName, fileExtension, printFileNames)
+exports.getFilesWithExtenstion = function(directoryName, fileExtension, printFileNames)
 {
     if (!fileExtension.startsWith("."))
     {
@@ -26,8 +26,4 @@ function getFilesWithExtenstion(directoryName, fileExtension, printFileNames)
 
         return printFileNames(null, filteredFileNames);
     });
-}
-
-module.exports = {
-    getFilesWithExtenstion:getFilesWithExtenstion
 }
