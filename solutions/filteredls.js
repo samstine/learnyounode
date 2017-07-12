@@ -9,11 +9,6 @@ if (!fileExtension.startsWith("."))
     fileExtension = "." + fileExtension;
 }
 
-if (!directroyPath.endsWith("/"))
-{
-    directroyPath += "/";
-}
-
 function readDirectoryAsync() {
     fs.readdir(directroyPath, function doneReading(err, directoryContents){
         if (err !== null) {
