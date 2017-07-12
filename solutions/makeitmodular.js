@@ -8,7 +8,7 @@ function printFileNames(err, fileNames)
     {
         console.log(err);
     } else {
-        fileNames.each(function(fileName){
+        fileNames.forEach(function(fileName){
             console.log(fileName);
         });
     }
