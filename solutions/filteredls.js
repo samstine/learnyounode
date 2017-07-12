@@ -20,17 +20,14 @@ function readDirectoryAsync() {
             return console.log(err);
         }
 
-        var matchingFileCount = 0;
         directoryContents.forEach(function(fileName) {
             var currentFileExtension = path.extname(fileName);
 
             if (currentFileExtension === fileExtension)
             {
-                matchingFileCount++;
+                console.log(fileName);
             }
         });
-
-        console.log(matchingFileCount);
     });
 }
 
