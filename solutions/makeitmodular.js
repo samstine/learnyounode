@@ -1,3 +1,3 @@
 var firstMoudle = require('./firstmoduel.js');
 
-firstMoudle.getFilesWithExtenstion(argsv[2], argsv[3]);
+firstMoudle.getFilesWithExtenstion(process.argv[2], process.argv[3]);
