@@ -20,7 +20,7 @@ function getFilesWithExtenstion(directoryName, fileExtension, printFileNames)
 
             if (currentFileExtension === fileExtension)
             {
-                filteredFileNames.add(fileName);
+                filteredFileNames.push(fileName);
             }
         });
 
