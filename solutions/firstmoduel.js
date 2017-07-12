@@ -28,19 +28,6 @@ function getFilesWithExtenstion(directoryName, fileExtension, printFileNames)
     });
 }
 
-function printFileNames(err, fileNames)
-{
-    if (err !== null)
-    {
-        console.log(err);
-    } else {
-        fileNames.each(function(fileName){
-            console.log(fileName);
-        });
-    }
-}
-
 module.exports = {
-    getFilesWithExtenstion:getFilesWithExtenstion,
-    printFileNames:printFileNames
+    getFilesWithExtenstion:getFilesWithExtenstion
 }
