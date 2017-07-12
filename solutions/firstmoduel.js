@@ -39,3 +39,8 @@ function printFileNames(err, fileNames)
         });
     }
 }
+
+module.exports = {
+    getFilesWithExtenstion:getFilesWithExtenstion,
+    printFileNames:printFileNames
+}
